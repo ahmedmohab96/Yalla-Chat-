@@ -60,7 +60,7 @@ class _ChatScreenState extends State<ChatScreen> {
         backgroundColor: Colors.yellow[900],
         title: Row(
           children: [
-            Image.asset('images/logo.png', height: 25),
+            Image.asset('images/playstore.png', height: 25),
             SizedBox(width: 10),
             Text('Yalla Chat!'),
           ],

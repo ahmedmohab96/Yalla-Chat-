@@ -31,7 +31,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             children: [
               Container(
                 height: 180,
-                child: Image.asset('images/logo.png'),
+                child: Image.asset('images/playstore.png'),
               ),
               SizedBox(height: 50),
               TextField(
@@ -105,6 +105,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   });
 
                   try {
+                    // ignore: unused_local_variable
                     final newUser = await _auth.createUserWithEmailAndPassword(
                         email: email, password: password);
                     Navigator.pushNamed(context, ChatScreen.screenRoute);

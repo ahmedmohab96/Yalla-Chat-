@@ -31,7 +31,7 @@ class _SignInScreenState extends State<SignInScreen> {
             children: [
               Container(
                 height: 180,
-                child: Image.asset('images/logo.png'),
+                child: Image.asset('images/playstore.png'),
               ),
               SizedBox(height: 50),
               TextField(
@@ -104,6 +104,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   try {
                     final user = await _auth.signInWithEmailAndPassword(
                         email: email, password: password);
+                    // ignore: unnecessary_null_comparison
                     if (user != null) {
                       Navigator.pushNamed(context, ChatScreen.screenRoute);
                       setState(() {
